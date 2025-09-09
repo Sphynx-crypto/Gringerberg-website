@@ -3,7 +3,16 @@ import Hero from '../components/sections/Hero';
 import ContactForm from '../components/sections/ContactForm';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const Contact = () => {
+  // Scroll to top on page load
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
   React.useEffect(() => {
     document.title = 'Contact - Nous contacter | L\'écurie du Gringerberg';
     const metaDescription = document.querySelector('meta[name="description"]');

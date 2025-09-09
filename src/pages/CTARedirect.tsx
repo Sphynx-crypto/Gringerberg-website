@@ -2,7 +2,16 @@ import React from 'react';
 import ReviewsCarousel from '../components/ui/ReviewsCarousel';
 import PracticalInfo from '../components/ui/PracticalInfo';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const CTARedirect = () => {
+  // Scroll to top on page load
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
   React.useEffect(() => {
     document.title = 'Avis & Informations pratiques | L\'écurie du Gringerberg';
     const metaDescription = document.querySelector('meta[name="description"]');

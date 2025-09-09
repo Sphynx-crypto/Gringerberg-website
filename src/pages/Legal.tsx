@@ -4,6 +4,11 @@ import { useParams } from 'react-router-dom';
 const Legal = () => {
   const { page } = useParams<{ page: string }>();
   
+  // Scroll to top on page load
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
   React.useEffect(() => {
     const titles = {
       'mentions': 'Mentions légales | L\'écurie du Gringerberg',

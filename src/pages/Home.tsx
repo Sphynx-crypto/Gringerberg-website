@@ -7,6 +7,10 @@ import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { Phone } from 'lucide-react';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeModal, setActiveModal] = useState<'balades' | 'pension' | null>(null);
@@ -33,6 +37,11 @@ const Home = () => {
     setActiveModal(null);
     setSearchParams({});
   };
+
+  // Scroll to top on page load
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
 
   React.useEffect(() => {
     document.title = 'L\'écurie du Gringerberg - Balades à cheval et pension équestre en Moselle';

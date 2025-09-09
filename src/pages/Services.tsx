@@ -5,7 +5,16 @@ import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import { MapPin, Home, Users, Phone } from 'lucide-react';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const Services = () => {
+  // Scroll to top on page load
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
   React.useEffect(() => {
     document.title = 'Services - Balades à cheval et pension équestre | L\'écurie du Gringerberg';
     const metaDescription = document.querySelector('meta[name="description"]');

@@ -2,7 +2,16 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import { Heart, Award, Users, Leaf } from 'lucide-react';
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const About = () => {
+  // Scroll to top on page load
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
+
   React.useEffect(() => {
     document.title = 'À propos - Notre passion pour les chevaux | L\'écurie du Gringerberg';
     const metaDescription = document.querySelector('meta[name="description"]');
