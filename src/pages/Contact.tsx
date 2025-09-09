@@ -183,19 +183,18 @@ const Contact = () => {
 
           {/* Map Placeholder */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-            <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-gray-600 mb-2">
-                  Carte interactive
-                </h3>
-                <p className="text-gray-500">
-                  150 rue Brühl, 57915 Woustviller
-                </p>
-                <p className="text-sm text-gray-400 mt-2">
-                  Intégration Google Maps à venir
-                </p>
-              </div>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.130020567509!2d7.010126076856386!3d49.08416948479073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47944a3b9ef7acc1%3A0xc99bcd8b691eca59!2s150%20Rue%20Bruhl%2C%2057915%20Woustviller!5e0!3m2!1sfr!2sfr!4v1757392502664!5m2!1sfr!2sfr" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="L'écurie du Gringerberg - 150 rue Brühl, 57915 Woustviller"
+                className="w-full h-full"
+              />
             </div>
           </div>
 
