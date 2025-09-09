@@ -10,9 +10,13 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">É</span>
-              </div>
+               {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+           <img
+  src="/Logo.png"
+  alt="Logo Écurie du Gringerberg"
+  className="w-10 h-10 object-contain"
+/>
               <div>
                 <span className="text-xl font-serif font-semibold">
                   L'écurie du Gringerberg
