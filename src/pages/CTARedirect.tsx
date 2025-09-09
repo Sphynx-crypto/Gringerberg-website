@@ -56,7 +56,8 @@ const CTARedirect = () => {
             Merci pour votre intérêt
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Découvrez nos avis récents et toutes les informations pratiques.
+            Les réservations se font exclusivement par téléphone ou par email.
+N’hésite pas à nous contacter pour toute demande ou information supplémentaire
           </p>
         </div>
 
