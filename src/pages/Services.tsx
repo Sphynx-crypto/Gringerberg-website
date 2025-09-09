@@ -189,15 +189,7 @@ const Services = () => {
               icon={Phone}
             >
               Nous contacter
-            </Button>
-            <Button 
-              to="/contact"
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-accent"
-            >
-              Nous contacter
-            </Button>
+         
           </div>
         </div>
       </section>
