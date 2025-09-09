@@ -17,6 +17,7 @@ const Footer = () => {
   alt="Logo Écurie du Gringerberg"
   className="w-10 h-10 object-contain"
 />
+          </Link>
               <div>
                 <span className="text-xl font-serif font-semibold">
                   L'écurie du Gringerberg
