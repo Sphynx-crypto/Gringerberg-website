@@ -199,29 +199,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Directions 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-4">
-                En voiture
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Sortie autoroute A4 direction Sarreguemines</li>
-                <li>• Suivre D603 jusqu'à Woustviller</li>
-                <li>• Parking gratuit sur place</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-4">
-                Transports en commun
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Gare SNCF la plus proche : Forbach</li>
-                <li>• Puis bus ligne 123 direction Woustviller</li>
-                <li>• Nous pouvons organiser un transfert sur demande</li>
-              </ul>
-            </div>
-          </div>*/}
+        
         </div>
       </section>
     </div>
